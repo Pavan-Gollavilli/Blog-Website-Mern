@@ -52,7 +52,7 @@ const router = createBrowserRouter([
         path: '/blogs/:id',
         element: <SingleBlog />,
         loader: ({ params }) =>
-          fetch(`https://blog-website-mern-backend.railway.internal/blogs/${params.id}`),
+          fetch(`https://blog-website-mern-backend-5u9l.onrender.com/blogs/${params.id}`)
       },
     ],
   },
