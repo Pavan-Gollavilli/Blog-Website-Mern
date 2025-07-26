@@ -8,7 +8,7 @@ const Home = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch("https://blog-website-mern-backend-5u9l.onrender.com/blogs")
+    fetch("https://blog-website-mern-backend-5u9l.onrender.com/blogs") 
       .then(res => res.json())
       .then(data => setBlogs(data.slice(0, 12))) 
   }, []);
